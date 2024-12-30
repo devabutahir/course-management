@@ -1,17 +1,65 @@
 //bn banner style
 .hero-section{
+    @include minQuery(1199){
+        margin-top: 95px;
+    }
     .authorize-maintains{
         position: absolute;
         right: 0;
         top: 0;
         max-width: 800px;
-        z-index: 9999;
+        z-index: 1;
         .authorize-item{
             max-width: 800px;
-            height: 900px;
+            height: 808px;
             img{
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    @include maxQuery(1600){
+        .authorize-maintains{
+            max-width: 800px;
+            .authorize-item{
+                max-width: 800px;
+                height: 778px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    @include maxQuery(1399){
+        .authorize-maintains{
+            max-width: 680px;
+            .authorize-item{
+                max-width: 800px;
+                height: 778px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    @include maxQuery(1199){
+        .authorize-maintains{
+            max-width: 100%;
+            margin: 0 auto;
+            position: initial;
+            .authorize-item{
+                max-width: 100%;
+                height: 700px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
     }
@@ -19,38 +67,41 @@
 .bn__ten-cont{
     max-width: 660px;
     padding: 80px 0 210px;
+    height: 808px;
     .display-three{
         font-size: 80px;
     }
-    @include maxQuery(1399){
+   @include maxQuery(1600){
+        max-width: 550px;
+        height: 782px;
         .display-three{
-            font-size: 58px;
+            font-size: 60px;
         }
-    }
-    @include maxQuery(1199){
-        padding: 100px 0 100px;
+   }
+   @include maxQuery(1199){
+        max-width: 700px;
+        height: initial;
+        padding: 70px 0 75px;
+        text-align: center;
+        margin: 0 auto;
+        p{
+            line-height: 26px;
+        }
         .display-three{
-            font-size: 48px;
+            font-size: 60px;
         }
-    }
-    @include maxQuery(991){
-        padding: 70px 0 60px;
-    }
-    @include maxQuery(767){
+   }
+   @include maxQuery(991){
+       padding: 140px 0 75px;
+   }
+   @include maxQuery(550){
+        p{
+            line-height: 26px;
+        }
         .display-three{
-            font-size: 38px;
+            font-size: 44px;
         }
-    }
-    @include maxQuery(500){
-        padding: 50px 0 50px;
-        .display-three{
-            font-size: 32px;
-        }
-        .custom__bigbtn{
-            display: grid;
-            flex-wrap: wrap;
-        }
-    }
+   }
 }
 .sponsor-v10{
     margin-top: -121px;
@@ -114,6 +165,9 @@
             font-size: 22px;
             color: var(--n0);
         }
+    }
+    @include maxQuery(1199){
+        margin: 0 auto;
     }
 }
 //bn1 banner style

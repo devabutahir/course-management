@@ -4,6 +4,14 @@
     z-index: 100;
     background: var(--n0);
     border-bottom: 1px solid #ebebeb;
+    @include minQuery(1199){
+        position: fixed;
+        top: 0;
+    }
+    @include maxQuery(991) {
+        position: absolute;
+        padding: 20px 0;
+    }
     .nav-brand {
         max-width: 265px;
         @include maxQuery(991) {
