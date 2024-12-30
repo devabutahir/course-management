@@ -170,7 +170,89 @@
         margin: 0 auto;
     }
 }
-//bn1 banner style
+//bn banner style
+
+//About More Style
+.about-more-content{
+    .more-aout-list{
+        li{
+            i{
+                font-size: 12px;
+            }
+        }
+    }
+}
+//About More Style
+
+//platform skill
+.platform-skill-item{
+    transition: all 0.4s;
+    border: 1px solid var(--n20);
+    .platform-skill-icon{
+        width: 65px;
+        height: 65px;
+        padding: 4px;
+        border-radius: 8px;
+        background: var(--n0);
+        img{
+            width: 45px;
+        }
+    }
+    &:hover{
+        background: var(--n0) !important;
+        border-color: var(--p1);
+    }
+}
+//platform skill
+
+//Community Section
+.student-communitys{
+    background: url(../../assets/images/community/stu-community.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 300px 0;
+    .student__countitem{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    @include maxQuery(1399){
+        padding: 250px 0;
+    }
+    @include maxQuery(1199){
+        padding: 200px 0;
+    }
+}
+//Community Section
+
+//Achivement Section
+.achivement-item{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+//Achivement Section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //courses details style
 .courses-details-righwrap{
@@ -3542,15 +3624,7 @@
 }
 // free live section
 
-// student section
-.scom-thumb{
-    .student__countitem{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-}
-// student section
+
 
 // education event section
 .educational__event{

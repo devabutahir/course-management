@@ -3603,6 +3603,55 @@ iframe {
   }
 }
 
+.about-more-content .more-aout-list li i {
+  font-size: 12px;
+}
+
+.platform-skill-item {
+  transition: all 0.4s;
+  border: 1px solid var(--n20);
+}
+.platform-skill-item .platform-skill-icon {
+  width: 65px;
+  height: 65px;
+  padding: 4px;
+  border-radius: 8px;
+  background: var(--n0);
+}
+.platform-skill-item .platform-skill-icon img {
+  width: 45px;
+}
+.platform-skill-item:hover {
+  background: var(--n0) !important;
+  border-color: var(--p1);
+}
+
+.student-communitys {
+  background: url(../../assets/images/community/stu-community.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 300px 0;
+}
+.student-communitys .student__countitem {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 1399px) {
+  .student-communitys {
+    padding: 250px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .student-communitys {
+    padding: 200px 0;
+  }
+}
+
+.achivement-item {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 @media (min-width: 991px) {
   .courses-details-righwrap {
     transform: translateY(-120px);
@@ -6780,12 +6829,6 @@ iframe {
   background: #FFC700;
   content: "";
   left: 0;
-}
-
-.scom-thumb .student__countitem {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 .educational__event::before {
