@@ -422,35 +422,6 @@ document.addEventListener("DOMContentLoaded", () => {
       $('.tabLinks .nav-links').not(this).removeClass('active');
     });
 
-    //price counting
-    $(document).ready(() => {
-      const toggleSwitch = $("#js-pricing-switch, #js-pricing-switch2, #js-pricing-switch3, #js-pricing-switch4, #js-pricing-switch5, #js-pricing-switch6, #js-pricing-switch7, #js-pricing-switch8, #js-pricing-switch9 input");
-    
-      (() => {
-        $(toggleSwitch).change(() => {
-          // Change prices for plans
-          togglePriceContent();
-    
-          // Toggle monthly/yearly style
-          $(".js-switch-label-monthly, .js-switch-label-yearly").toggleClass("active");
-        });
-      })();
-    
-      function togglePriceContent() {
-        if ($(toggleSwitch).is(":checked")) {
-          // if toggle is yearly
-          $(".js-toggle-price-content").each(function () {
-            $(this).html($(this).data("price-yearly"));
-          });
-        } else {
-          // if toggle is monthly
-          $(".js-toggle-price-content").each(function () {
-            $(this).html($(this).data("price-monthly"));
-          });
-        }
-      }
-    });    
-
     // progress-area
     let progressBars = $('.progress-area');
     let observer = new IntersectionObserver(function(progressBars) {

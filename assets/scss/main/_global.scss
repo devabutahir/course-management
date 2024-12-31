@@ -557,10 +557,16 @@ select {
 	border: 1px solid var(--n800);
 	padding: 12px 24px 14px 24px;
 	position: relative;
+	span{
+		transition: all 0.4s !important;
+	}
 	&:hover{
 		background: var(--p1);
 		color: var(--n0);
 		border-color: var(--n0);
+		span{
+			color: var(--n0);
+		}
 		&::after{
 			width: 100%;
 		}
@@ -603,7 +609,7 @@ select {
 		padding: 8px 16px;
 		font-size: 24px;
 		font-weight: 700;
-		color: #000;
+		color: #fff;
 		border-top-left-radius: 10px;
 	}
 }
@@ -911,6 +917,7 @@ select {
 		i{
 			color: var(--p1);
 			transition: all 0.4s;
+			font-size: 20px !important;
 		}
 		&:hover{
 			background-color: var(--p1);
@@ -1311,6 +1318,25 @@ iframe {
 }
 .explore__item{
 	transition: all 0.4s;
+	.thumb {
+		overflow: hidden;
+		img{
+			overflow: hidden;
+			transition: all 0.5s;
+			&:hover{
+				transform: scale(1.1);
+			}
+		}
+	}
+	.content {
+		a{
+			transition: all 0.4s;
+			&:hover{
+				color: var(--p1);
+				border-color: var(--p1) !important;
+			}
+		}
+	}
 }
 .cmnhover{
 	overflow: hidden;
@@ -1341,6 +1367,12 @@ iframe {
 				opacity: 1;
 			}
 		}
+	}
+}
+.rotss{
+	&:hover{
+		color: var(--p1) !important;
+		border-color: var(--p1) !important;
 	}
 }
 //cmn hover
@@ -1596,11 +1628,6 @@ iframe {
 		display: block;
 	}
 }
-//mycheckbox 
-.mycustom__check{
-
-}
-//mycheckbox 
 
 // Single switch
 // Single Radio
@@ -2085,7 +2112,6 @@ iframe {
     @include maxQuery(991){
         overflow: auto;
         position: absolute;
-        height: 65vh;
         top: 120px;
         right: -320px;
         width: 317px;
