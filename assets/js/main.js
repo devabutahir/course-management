@@ -69,6 +69,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
+    // data background
+    $("[data-background]").each(function () {
+      $(this).css(
+        "background-image",
+        "url(" + $(this).attr("data-background") + ")"
+      );
+    });
+
     // magnific-popup
     $('.popup-video').magnificPopup({
       type: 'iframe'
@@ -162,64 +170,64 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       // educational slide 
-        var swiper = new Swiper(".educational__wrap", {
-          loop: true,
-          slidesPerView: 1,
-          slidesToShow: 1,
-          spaceBetween: 24,
-          speed: 1000,
-          navigation: {
-            nextEl: ".swiper-button-next2",
-            prevEl: ".swiper-button-prev2",
+      var swiper = new Swiper(".educational__wrap", {
+        loop: true,
+        slidesPerView: 1,
+        slidesToShow: 1,
+        spaceBetween: 24,
+        speed: 1000,
+        navigation: {
+          nextEl: ".swiper-button-next2",
+          prevEl: ".swiper-button-prev2",
+        },
+        autoplay: {
+          delay: 1200,
+        },
+        breakpoints: {
+          1400: {
+              slidesPerView: 3,
+              spaceBetween: 24,
           },
-          autoplay: {
-            delay: 1200,
-          },
-          breakpoints: {
-            1400: {
-                slidesPerView: 3,
-                spaceBetween: 24,
-            },
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 14,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 14,
-            },
-            576: {
-                slidesPerView: 2,
-                spaceBetween: 14,
-            },
-            500: {
-              slidesPerView: 1,
+          992: {
+              slidesPerView: 3,
               spaceBetween: 14,
-            },
-        }
-        });
+          },
+          768: {
+              slidesPerView: 2,
+              spaceBetween: 14,
+          },
+          576: {
+              slidesPerView: 2,
+              spaceBetween: 14,
+          },
+          500: {
+            slidesPerView: 1,
+            spaceBetween: 14,
+          },
+      }
+      });
       // swipper slide 
 
       // testi two slide 
-        var swiper = new Swiper(".testitwo__wrap", {
-          loop: true,
-          slidesPerView: 1,
-          slidesToShow: 1,
-          spaceBetween: 14,
-          speed: 1000,
-          navigation: {
-            nextEl: ".swiper-button-next3",
-            prevEl: ".swiper-button-prev3",
+      var swiper = new Swiper(".testitwo__wrap", {
+        loop: true,
+        slidesPerView: 1,
+        slidesToShow: 1,
+        spaceBetween: 14,
+        speed: 1000,
+        navigation: {
+          nextEl: ".swiper-button-next3",
+          prevEl: ".swiper-button-prev3",
+        },
+        autoplay: {
+          delay: 1600,
+        },
+        breakpoints: {
+          1400: {
+              slidesPerView: 1,
           },
-          autoplay: {
-            delay: 1600,
-          },
-          breakpoints: {
-            1400: {
-                slidesPerView: 1,
-            },
-        }
-        });
+      }
+      });
 
       // educational slide 
       var swiper = new Swiper(".sponsor__wrap10", {

@@ -1645,6 +1645,19 @@ iframe {
 			transform: rotate(-0deg) !important;
 		}
 	}
+	button{
+		transition: all 0.5s;
+		i{
+			transition: all 0.5s;
+			color: var(--n80);
+		}
+		&:hover{
+			background: var(--p1) !important;
+			i{
+				color: var(--n0) !important;
+			}
+		}
+	}
 	.cmn-btn{
 		&.active,
 		&:hover{

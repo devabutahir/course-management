@@ -2065,6 +2065,19 @@ iframe {
 .slider-btn.active i, .slider-btn:hover i {
   transform: rotate(0deg) !important;
 }
+.slider-btn button {
+  transition: all 0.5s;
+}
+.slider-btn button i {
+  transition: all 0.5s;
+  color: var(--n80);
+}
+.slider-btn button:hover {
+  background: var(--p1) !important;
+}
+.slider-btn button:hover i {
+  color: var(--n0) !important;
+}
 .slider-btn .cmn-btn.active i, .slider-btn .cmn-btn:hover i {
   transform: rotate(0deg) !important;
 }
@@ -3627,9 +3640,7 @@ iframe {
 }
 
 .student-communitys {
-  background: url(../../assets/images/community/stu-community.png) no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
   padding: 300px 0;
 }
 .student-communitys .student__countitem {
@@ -3648,8 +3659,68 @@ iframe {
   }
 }
 
+.join-community-section {
+  background-size: cover;
+  z-index: 1;
+}
+.join-community-section::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.337);
+}
+
 .achivement-item {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.testi__oneitem {
+  background: var(--n20);
+  transition: all 0.4s;
+  border-top-left-radius: 40px !important;
+}
+.testi__oneitem .cont .cameron {
+  font-size: 20px;
+  font-weight: 600;
+}
+.testi__oneitem .ratting {
+  top: 16px;
+  left: 20px;
+}
+@media (max-width: 1199px) {
+  .testi__oneitem .cont .cameron {
+    font-size: 18px;
+  }
+}
+.testi__oneitem .quote {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media (max-width: 1199px) {
+  .testi__oneitem p {
+    font-size: 16px;
+  }
+}
+.testi__oneitem:hover {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.testi__oneitem:hover .quote {
+  background: var(--p1);
+}
+
+.cmn__white {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 1199px) {
+  .cmn__white {
+    width: 52px;
+  }
 }
 
 @media (min-width: 991px) {
@@ -5872,51 +5943,6 @@ iframe {
 .growth__item:hover {
   background: var(--p1);
   border-color: var(--p1) !important;
-}
-
-.testi__oneitem {
-  background: var(--n20);
-  transition: all 0.4s;
-}
-.testi__oneitem .cont .cameron {
-  font-size: 20px;
-  font-weight: 600;
-}
-.testi__oneitem .ratting {
-  top: 16px;
-  left: 20px;
-}
-@media (max-width: 1199px) {
-  .testi__oneitem .cont .cameron {
-    font-size: 18px;
-  }
-}
-.testi__oneitem .quote {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-@media (max-width: 1199px) {
-  .testi__oneitem p {
-    font-size: 16px;
-  }
-}
-.testi__oneitem:hover {
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-.testi__oneitem:hover .quote {
-  background: var(--p1);
-}
-
-.cmn__white {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-@media (max-width: 1199px) {
-  .cmn__white {
-    width: 52px;
-  }
 }
 
 @media (max-width: 1399px) {

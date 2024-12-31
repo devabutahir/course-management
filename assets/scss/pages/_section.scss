@@ -207,9 +207,7 @@
 
 //Community Section
 .student-communitys{
-    background: url(../../assets/images/community/stu-community.png) no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
     padding: 300px 0;
     .student__countitem{
         position: absolute;
@@ -223,6 +221,19 @@
         padding: 200px 0;
     }
 }
+.join-community-section{
+    background-size: cover;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: rgba(0, 0, 0, 0.337);
+    }
+}
 //Community Section
 
 //Achivement Section
@@ -231,7 +242,54 @@
 }
 //Achivement Section
 
-
+// testimonial section
+.testi__oneitem{
+    background: var(--n20);
+    transition: all 0.4s;
+    border-top-left-radius: 40px !important;
+    .cont{
+        .cameron{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    .ratting{
+        top: 16px;
+        left: 20px;
+    }
+    @include maxQuery(1199){
+        .cont{
+            .cameron{
+                font-size: 18px;
+            }
+        }
+    }
+    .quote{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    @include maxQuery(1199){
+        p{
+            font-size: 16px;
+        }
+    }
+    &:hover{
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        .quote{
+            background: var(--p1);
+        }
+    }
+}
+.cmn__white{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include maxQuery(1199){
+        width: 52px;
+    }
+}
+// testimonial section
 
 
 
@@ -2637,53 +2695,7 @@
 }
 // growth section
 
-// testimonial section
-.testi__oneitem{
-    background: var(--n20);
-    transition: all 0.4s;
-    .cont{
-        .cameron{
-            font-size: 20px;
-            font-weight: 600;
-        }
-    }
-    .ratting{
-        top: 16px;
-        left: 20px;
-    }
-    @include maxQuery(1199){
-        .cont{
-            .cameron{
-                font-size: 18px;
-            }
-        }
-    }
-    .quote{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-    @include maxQuery(1199){
-        p{
-            font-size: 16px;
-        }
-    }
-    &:hover{
-        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-        .quote{
-            background: var(--p1);
-        }
-    }
-}
-.cmn__white{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    @include maxQuery(1199){
-        width: 52px;
-    }
-}
-// testimonial section
+
 
 // testimonial two section
 .testi-twothumb{
