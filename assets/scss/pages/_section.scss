@@ -335,6 +335,22 @@
             max-width: 700px;
         }
     }
+    @include maxQuery(1399){
+        .sec__titletwo{
+            max-width: 800px;
+        }
+    }
+    @include maxQuery(1199){
+        .sec__titletwo{
+            max-width: 600px;
+        }
+    }
+    @include maxQuery(991){
+        padding: 60px 0 75px;
+        .sec__titletwo{
+            max-width: 100%;
+        }
+    }
     @include maxQuery(575){
         .mimg{
             height: 100%;
@@ -452,6 +468,9 @@
             }
         }
     }
+}
+.content-area{
+    display: none;
 }
 // tab faq
 
@@ -628,6 +647,32 @@
                     }
                 }
             }
+        }
+    }
+    &.style3{
+        .tablinks{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            .nav-links{
+                &.active{
+                    .tablink{
+                        background: var(--p1) !important;
+                        color: var(--n0) !important;
+                    }
+                }
+            }
+            @include maxQuery(1199){
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @include maxQuery(500){
+                grid-template-columns: repeat(2, 1fr);
+                .tablink{
+                    font-size: 14px;
+                }
+            }
+        }
+        .tablink{
+            background: var(--n20) !important;
         }
     }
 }

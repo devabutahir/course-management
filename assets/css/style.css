@@ -3453,6 +3453,24 @@ iframe {
 .thumb-courses .sec__titletwo p {
   max-width: 700px;
 }
+@media (max-width: 1399px) {
+  .thumb-courses .sec__titletwo {
+    max-width: 800px;
+  }
+}
+@media (max-width: 1199px) {
+  .thumb-courses .sec__titletwo {
+    max-width: 600px;
+  }
+}
+@media (max-width: 991px) {
+  .thumb-courses {
+    padding: 60px 0 75px;
+  }
+  .thumb-courses .sec__titletwo {
+    max-width: 100%;
+  }
+}
 @media (max-width: 575px) {
   .thumb-courses .mimg {
     height: 100%;
@@ -3548,6 +3566,10 @@ iframe {
 .tab-faq .header-area .accordion-btn::after {
   font-size: 24px;
   color: var(--p1);
+}
+
+.content-area {
+  display: none;
 }
 
 .course-reviewfixed {
@@ -3713,6 +3735,30 @@ iframe {
     background: var(--p1);
     color: var(--n0);
   }
+}
+.explore__tab.style3 .tablinks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.explore__tab.style3 .tablinks .nav-links.active .tablink {
+  background: var(--p1) !important;
+  color: var(--n0) !important;
+}
+@media (max-width: 1199px) {
+  .explore__tab.style3 .tablinks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .explore__tab.style3 .tablinks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .explore__tab.style3 .tablinks .tablink {
+    font-size: 14px;
+  }
+}
+.explore__tab.style3 .tablink {
+  background: var(--n20) !important;
 }
 
 .reset__filter {
