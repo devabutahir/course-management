@@ -314,12 +314,10 @@
 // testimonial section
 
 //courses details style
-.courses-details-righwrap{
-    @include minQuery(991){
-        transform: translateY(-120px);
-        margin-bottom: -120px;
-        position: sticky;
-        top: 120px;
+.courses-details-thumb{
+    // height: 500px;
+    img{
+        height: 100%;
     }
 }
 .thumb-courses{

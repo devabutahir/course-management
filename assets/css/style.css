@@ -2995,6 +2995,12 @@ iframe {
   width: 100%;
   background: var(--n0);
 }
+@media (max-width: 991px) {
+  .header-fixed {
+    padding: 20px 0;
+    border-bottom: 1px solid #ebebeb;
+  }
+}
 
 .hero-border {
   border-top: 1px solid var(--n30);
@@ -3426,13 +3432,8 @@ iframe {
   }
 }
 
-@media (min-width: 991px) {
-  .courses-details-righwrap {
-    transform: translateY(-120px);
-    margin-bottom: -120px;
-    position: sticky;
-    top: 120px;
-  }
+.courses-details-thumb img {
+  height: 100%;
 }
 
 @media (max-width: 575px) {
