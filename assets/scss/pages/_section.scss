@@ -322,8 +322,8 @@
 }
 .courses-details-righwrap{
     @include minQuery(991){
-        transform: translateY(-460px);
-        margin-bottom: -460px;
+        transform: translateY(-260px);
+        margin-bottom: -260px;
     }
 }
 .thumb-courses{
