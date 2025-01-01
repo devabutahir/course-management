@@ -193,6 +193,19 @@
             }
         }
     }
+    &.style2{
+        p{
+            line-height: 34px;
+        }
+        @include maxQuery(1199){
+            p{
+                line-height: 28px;
+            }
+        }
+    }
+}
+.vission-content{
+    
 }
 //About More Style
 

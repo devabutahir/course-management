@@ -3310,6 +3310,14 @@ iframe {
 .about-more-content .more-aout-list li i {
   font-size: 12px;
 }
+.about-more-content.style2 p {
+  line-height: 34px;
+}
+@media (max-width: 1199px) {
+  .about-more-content.style2 p {
+    line-height: 28px;
+  }
+}
 
 .platform-skill-item {
   transition: all 0.4s;
