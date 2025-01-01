@@ -1925,6 +1925,10 @@ iframe {
   transition: all 0.4s;
   background: var(--p1) !important;
   border-color: var(--p1) !important;
+  color: var(--n0);
+}
+.pagination li:hover a i {
+  color: var(--n0);
 }
 .pagination .page-item .page-link {
   outline: none;
@@ -2701,8 +2705,8 @@ iframe {
   .cmn-leftclickbody {
     overflow: auto;
     position: absolute;
-    height: 65vh;
-    top: 120px;
+    height: 100vh;
+    top: 134px;
     transform: translateX(-320px);
     width: 300px;
     transition: all 0.6s;
@@ -3695,6 +3699,25 @@ iframe {
     background: var(--p1);
     color: var(--n0);
   }
+}
+
+.reset__filter {
+  transition: all 0.4s;
+}
+.reset__filter i, .reset__filter span {
+  transition: all 0.4s;
+}
+.reset__filter:hover {
+  background: var(--p1);
+  color: var(--n0);
+}
+.reset__filter:hover i,
+.reset__filter:hover span {
+  color: var(--n0);
+}
+
+.list-browse-language .nice-select .list {
+  background: #fff;
 }
 
 .event-details .bread-rights {

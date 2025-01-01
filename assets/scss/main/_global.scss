@@ -1494,6 +1494,10 @@ iframe {
 				transition: all 0.4s;
 				background: var(--p1) !important;
 				border-color: var(--p1) !important;
+				color: var(--n0);
+				i{
+					color: var(--n0);
+				}
 			}	
 		}
 	}
@@ -2170,8 +2174,8 @@ iframe {
     @include maxQuery(991){
         overflow: auto;
         position: absolute;
-        height: 65vh;
-        top: 120px;
+        height: 100vh;
+        top: 134px;
         transform: translateX(-320px);
         width: 300px;
         transition: all 0.6s;

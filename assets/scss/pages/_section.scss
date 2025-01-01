@@ -204,9 +204,6 @@
         }
     }
 }
-.vission-content{
-    
-}
 //About More Style
 
 //platform skill
@@ -625,7 +622,31 @@
         }
     }
 }
+.reset__filter{
+    transition: all 0.4s;
+    i,span{
+        transition: all 0.4s;
+    }
+    &:hover{
+        background: var(--p1);
+        color: var(--n0);
+        i,
+        span{
+            color: var(--n0);
+        }
+    }
+}
 //browse section
+
+//List Browse section
+.list-browse-language{
+    .nice-select{
+        .list{
+            background: #fff;
+        }
+    }
+}
+//List Browse section
 
 // event -details
 .event-details{
