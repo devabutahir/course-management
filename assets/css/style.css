@@ -3304,7 +3304,7 @@ iframe {
 }
 
 .space-top-custom {
-  padding-top: 180px;
+  padding-top: 130px;
 }
 @media (max-width: 1199px) {
   .space-top-custom {
@@ -3436,13 +3436,26 @@ iframe {
   height: 100%;
 }
 
-@media (max-width: 575px) {
-  .thumb-courses {
-    margin-bottom: 36px;
+@media (min-width: 991px) {
+  .courses-details-righwrap {
+    transform: translateY(-460px);
+    margin-bottom: -460px;
   }
+}
+
+.thumb-courses {
+  background-size: cover;
+  padding: 100px 0 130px;
+}
+.thumb-courses .sec__titletwo {
+  max-width: 850px;
+}
+.thumb-courses .sec__titletwo p {
+  max-width: 700px;
+}
+@media (max-width: 575px) {
   .thumb-courses .mimg {
     height: 100%;
-    margin-bottom: 24px;
   }
   .thumb-courses .breadcrumnd {
     position: initial !important;
