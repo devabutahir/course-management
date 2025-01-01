@@ -1921,14 +1921,18 @@ iframe {
 .pagination li a i {
   color: var(--n700);
 }
-.pagination li:hover a {
+.pagination li a.active, .pagination li a:hover {
   transition: all 0.4s;
   background: var(--p1) !important;
   border-color: var(--p1) !important;
   color: var(--n0);
 }
-.pagination li:hover a i {
+.pagination li a.active i, .pagination li a:hover i {
   color: var(--n0);
+}
+.pagination li a.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 .pagination .page-item .page-link {
   outline: none;

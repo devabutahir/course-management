@@ -69,6 +69,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
+    //pagination file
+      const paginationButtons = document.querySelectorAll('.pagination a');
+
+      paginationButtons.forEach(button => {
+          button.addEventListener('click', (e) => {
+              // Remove active class from all buttons
+              paginationButtons.forEach(btn => btn.classList.remove('active'));
+              
+              // Add active class to the clicked button if not disabled
+              if (!button.classList.contains('disabled')) {
+                  button.classList.add('active');
+              }
+          });
+      });
+
     // data background
     $("[data-background]").each(function () {
       $(this).css(

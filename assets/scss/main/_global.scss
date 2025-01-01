@@ -1488,9 +1488,8 @@ iframe {
 			i{
 				color: var(--n700);
 			}
-		}
-		&:hover{
-			a{
+			&.active,
+			&:hover{
 				transition: all 0.4s;
 				background: var(--p1) !important;
 				border-color: var(--p1) !important;
@@ -1498,8 +1497,13 @@ iframe {
 				i{
 					color: var(--n0);
 				}
-			}	
+			}
+			&.disabled {
+				pointer-events: none;
+				opacity: 0.5;
+			}
 		}
+		
 	}
 	.page-item{
 		.page-link{
